@@ -37,7 +37,7 @@ You can use an existing instance of the Conversation service. Otherwise, follow 
     cf create-service conversation free my-conversation-service
     ```
 
-### Importing the Conversation workspace
+### Importing the Conversation workspace [optional]
 
 1. In your browser, navigate to [your IBM Cloud console] (https://console.ng.bluemix.net/dashboard/services).
 
@@ -53,7 +53,17 @@ You can use an existing instance of the Conversation service. Otherwise, follow 
 
 1. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The car dashboard workspace is created.
 
-### Configuring the app environment
+### Importing from Bot Asset Exchange (BAE) [optional]
+
+1. In your browser, navigate to the [Bot Asset Exchange] ().
+
+1. Choose a bot you want to use and click download.
+
+1. Login with your IBM Cloud account information.
+
+1. ...
+
+### Configuring the app environment (via bash)
 
 1. Copy or rename the `.env.example` file to `.env` (nothing before the dot).
 
@@ -96,7 +106,7 @@ You can use an existing instance of the Conversation service. Otherwise, follow 
 
 1. On the local system, paste the workspace ID into the WORKSPACE_ID variable in the `.env` file. Save and close the file.
 
-### Installing and starting the app
+### Installing and starting the app (via bash)
 
 1. Install the demo app package into the local Node.js runtime environment:
 
@@ -130,7 +140,7 @@ After you have the app deployed and running, you can explore the source files an
 
 ## Deploying to IBM Cloud
 
-You can use Cloud Foundry to deploy your local version of the app to Bluemix.
+You can use Cloud Foundry to deploy your local version of the app to IBM Cloud.
 
 1. In the project root directory, open the `manifest.yml` file:
 
@@ -157,12 +167,12 @@ You can use Cloud Foundry to deploy your local version of the app to Bluemix.
      NPM_CONFIG_PRODUCTION: false
   ```
 
-1. Push the app to Bluemix:
+1. Push the app to IBM Cloud:
 
   ```bash
   cf push
   ```
-  Access your app on Bluemix at the URL specified in the command output.
+  Access your app on IBM Cloud at the URL specified in the command output.
 
 ## Troubleshooting
 

@@ -8,9 +8,6 @@ This Node.js app demonstrates the Conversation service in a simple chat interfac
     * [Sign up](https://console.ng.bluemix.net/registration/?target=/catalog/%3fcategory=watson) in Bluemix, or use an existing account. Your account must have available space for at least 1 app and 1 service.
 * Make sure that you have the following prerequisites installed:
     * The [Node.js](https://nodejs.org/#download) runtime, including the [npm][npm_link] package manager
-    * The [Cloud Foundry][cloud_foundry] command-line client
-
-      Note: Ensure that you Cloud Foundry version is up to date
 
 ## Installing locally
 
@@ -24,18 +21,8 @@ Use GitHub to clone the repository locally, or [download the .zip file](https://
 
 You can use an existing instance of the Conversation service. Otherwise, follow these steps.
 
-1. At the command line, go to the local project directory (`conversation-simple`).
+[todo]
 
-1. Connect to IBM Cloud with the Cloud Foundry command-line tool. For more information, see the Watson Developer Cloud [documentation][cf_docs].
-    ```bash
-    cf login
-    ```
-
-1. Create an instance of the Conversation service in IBM Cloud. For example:
-
-    ```bash
-    cf create-service conversation free my-conversation-service
-    ```
 
 ### Importing the Conversation workspace [optional]
 

@@ -19,9 +19,50 @@ Use GitHub to clone the repository locally, or [download the .zip file](https://
 
 ### Setting up the Conversation service
 
-You can use an existing instance of the Conversation service. Otherwise, follow these steps.
+Create an IBM Cloud account if you haven't already.
 
-[todo]
+Click "Catalog" in the upper menu. This will take you to the list of available services, platforms, and other offerings on the IBM Cloud. To make it simple, use the column menu and click "Watson" at the very bottom. This will filter the catalog to just show Watson Services.
+
+![alt text][WatsonCatalogOfferings]
+
+Click on Conversation to start the provisioning of the service.
+
+Name the service, and select a region/location to deploy in. If applicable, choose an organization and space or leave it to the default if you only have one of each.
+
+![alt text][conversation-top]
+
+For pricing plans, keep the Lite plan, but notice your limits.
+
+![alt text][conversation-bottom]
+
+Click "Create" and wait for the service to provision. This may take some time.
+
+Once the service is provisioned successfully, click on the Launch Tool button. This opens the Watson Conversation tool and may require you to login again.
+
+![alt text][conversation-manage]
+
+The page that loads contains your workspaces. Click the icon to import a workspace.
+
+![alt text][workspaces]
+
+Import the [json file](https://github.com/IBM/watson-conversation-slots-intro/blob/master/data/watson-pizzeria.json) from the [Pizza Ordering Code Pattern](https://developer.ibm.com/code/patterns/assemble-a-pizza-ordering-chatbot-dialog/). Choose the file and import everything. This will create a new workspace with all the intents, entities, and dialog intact.
+
+Click the new workspace tile to open it.
+
+![alt text][Workspace-dashboard]
+
+Click the Deploy icon.
+
+Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the C# script to access the API.
+
+![alt text][credentials]
+
+...
+
+Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the C# script to access the API. This does not show your workspace ID.
+
+![alt text][conversation-service-credentials]
+
 
 
 ### Importing the Conversation workspace [optional]
@@ -193,3 +234,11 @@ Find more open source projects on the
 [node_link]: (http://nodejs.org/)
 [npm_link]: (https://www.npmjs.com/)
 [sign_up]: bluemix.net/registration
+[conversation-top]: ./images/conversation-top.png "alt text"
+[conversation-bottom]: ./images/conversation-bottom.png "alt text"
+[conversation-manage]: ./images/conversation-manage.png "alt text"
+[conversation-service-credentials]: ./images/conversation-top.png "alt text"
+[workspaces]: ./images/workspaces.png "alt text"
+[Workspace-dashboard]: ./images/Workspace-dashboard.png "alt text"
+[credentials]: ./images/credentials.png "alt text"
+[WatsonCatalogOfferings]: ./images/WatsonCatalogOfferings.png "alt text"

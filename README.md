@@ -234,11 +234,11 @@ Find more open source projects on the
 [node_link]: (http://nodejs.org/)
 [npm_link]: (https://www.npmjs.com/)
 [sign_up]: bluemix.net/registration
-[conversation-top]: ./images/conversation-top.png "alt text"
-[conversation-bottom]: ./images/conversation-bottom.png "alt text"
-[conversation-manage]: ./images/conversation-manage.png "alt text"
-[conversation-service-credentials]: ./images/conversation-top.png "alt text"
-[workspaces]: ./images/workspaces.png "alt text"
-[Workspace-dashboard]: ./images/Workspace-dashboard.png "alt text"
-[credentials]: ./images/credentials.png "alt text"
-[WatsonCatalogOfferings]: ./images/WatsonCatalogOfferings.png "alt text"
+[conversation-top]: ./readme_images/conversation-top.png "alt text"
+[conversation-bottom]: ./readme_images/conversation-bottom.png "alt text"
+[conversation-manage]: ./readme_images/conversation-manage.png "alt text"
+[conversation-service-credentials]: ./readme_images/conversation-top.png "alt text"
+[workspaces]: ./readme_images/workspaces.png "alt text"
+[Workspace-dashboard]: ./readme_images/Workspace-dashboard.png "alt text"
+[credentials]: ./readme_images/credentials.png "alt text"
+[WatsonCatalogOfferings]: ./readme_images/WatsonCatalogOfferings.png "alt text"

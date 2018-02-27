@@ -240,5 +240,5 @@ Find more open source projects on the
 [conversation-service-credentials]: ./readme_images/conversation-top.png "alt text"
 [workspaces]: ./readme_images/workspaces.png "alt text"
 [Workspace-dashboard]: ./readme_images/Workspace-dashboard.png "alt text"
-[credentials]: ./readme_images/credentials.png "alt text"
+[credentials]: ./readme_images/credentials.PNG "alt text"
 [WatsonCatalogOfferings]: ./readme_images/WatsonCatalogOfferings.png "alt text"

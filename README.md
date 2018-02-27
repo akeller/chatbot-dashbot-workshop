@@ -13,9 +13,7 @@ This Node.js app demonstrates the Conversation service in a simple chat interfac
 
 If you want to modify the app or use it as a basis for building your own app, install it locally. You can then deploy your modified version of the app to the IBM Cloud.
 
-### Getting the files
-
-Use GitHub to clone the repository locally, or [download the .zip file](https://github.com/watson-developer-cloud/conversation-simple/archive/master.zip) of the repository and extract the files.
+Clone this repo!
 
 ### Setting up the Conversation service
 
@@ -63,76 +61,40 @@ Alternatively, from the IBM Cloud Conversation page (page where the Launch tool 
 
 ![alt text][conversation-service-credentials]
 
-
-
-### Importing the Conversation workspace [optional]
-
-1. In your browser, navigate to [your IBM Cloud console] (https://console.ng.bluemix.net/dashboard/services).
-
-1. From the **All Items** tab, click the newly created Conversation service in the **Services** list.
-
-    ![Screen capture of Services list](readme_images/conversation_service.png)
-
-1. On the Service Details page, click **Launch tool**.
-
-1. Click the **Import workspace** icon in the Conversation service tool. Specify the location of the workspace JSON file in your local copy of the app project:
-
-    `watson_pizza.json`
-
-1. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The car dashboard workspace is created.
-
 ### Importing from Bot Asset Exchange (BAE) [optional]
 
-1. In your browser, navigate to the [Bot Asset Exchange] ().
+In your browser, navigate to the [Bot Asset Exchange] (https://developer.ibm.com/code/exchanges/bots/).
 
-1. Choose a bot you want to use and click download.
+Choose a bot you want to use and click download.
 
-1. Login with your IBM Cloud account information.
+Login with your IBM Cloud account information.
 
-1. ...
+The page that loads contains your workspaces. Click the icon to import a workspace.
 
-### Configuring the app environment (via bash)
+![alt text][workspaces]
 
-1. Copy or rename the `.env.example` file to `.env` (nothing before the dot).
+Import the json file that you downloaded. Choose the file and import everything. This will create a new workspace with all the intents, entities, and dialog intact.
 
-1. Create a service key in the format `cf create-service-key <service_instance> <service_key>`. For example:
+Click the new workspace tile to open it.
 
-    ```bash
-    cf create-service-key my-conversation-service myKey
-    ```
+![alt text][Workspace-dashboard]
 
-1. Retrieve the credentials from the service key using the command `cf service-key <service_instance> <service_key>`. For example:
+Click the Deploy icon.
 
-    ```bash
-    cf service-key my-conversation-service myKey
-    ```
+Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the C# script to access the API.
 
-   The output from this command is a JSON object, as in this example:
+![alt text][credentials]
 
-    ```JSON
-    {
-      "password": "87iT7aqpvU7l",
-      "url": "https://gateway.watsonplatform.net/conversation/api",
-      "username": "ca2905e6-7b5d-4408-9192-e4d54d83e604"
-    }
-    ```
+...
 
-1. Paste  the `password` and `username` values (without quotation marks) from the JSON into the `CONVERSATION_PASSWORD` and `CONVERSATION_USERNAME` variables in the `.env` file. For example:
+Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the C# script to access the API. This does not show your workspace ID.
 
-    ```
-    CONVERSATION_USERNAME=ca2905e6-7b5d-4408-9192-e4d54d83e604
-    CONVERSATION_PASSWORD=87iT7aqpvU7l
-    ```
 
-1. In your IBM Cloud console, open the Conversation service instance where you imported the workspace.
+### Add credentials
 
-1. Click the menu icon in the upper-right corner of the workspace tile, and then select **View details**.
+1. On the local system, paste the workspace ID into the WORKSPACE_ID variable in the `.env` file. Paste in the USERNAME and PASSWORD for your conversation service as well. Save and close the file.
 
-    ![Screen capture of workspace tile menu](readme_images/workspace_details.png)
-
-1. Click the ![Copy](readme_images/copy_icon.png) icon to copy the workspace ID to the clipboard.
-
-1. On the local system, paste the workspace ID into the WORKSPACE_ID variable in the `.env` file. Save and close the file.
+![alt text][env_file]
 
 ### Installing and starting the app (via bash)
 
@@ -202,13 +164,6 @@ You can use Cloud Foundry to deploy your local version of the app to IBM Cloud.
   ```
   Access your app on IBM Cloud at the URL specified in the command output.
 
-## Troubleshooting
-
-If you encounter a problem, you can check the logs for more information. To see the logs, run the `cf logs` command:
-
-```none
-cf logs <application-name> --recent
-```
 
 ## License
 
@@ -242,3 +197,4 @@ Find more open source projects on the
 [Workspace-dashboard]: ./readme_images/Workspace-dashboard.png "alt text"
 [credentials]: ./readme_images/credentials.PNG "alt text"
 [WatsonCatalogOfferings]: ./readme_images/WatsonCatalogOfferings.png "alt text"
+[env_file]: ./readme_images/env_file.png "alt text"

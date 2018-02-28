@@ -67,7 +67,7 @@ Alternatively, from the IBM Cloud Conversation page (page where the Launch tool 
 
 ### Importing from Bot Asset Exchange (BAE) [optional]
 
-In your browser, navigate to the [Bot Asset Exchange] (https://developer.ibm.com/code/exchanges/bots/).
+In your browser, navigate to the [Bot Asset Exchange](https://developer.ibm.com/code/exchanges/bots/).
 
 Choose a bot you want to use and click download.
 

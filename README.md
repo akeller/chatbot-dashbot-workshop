@@ -51,13 +51,13 @@ Click the new workspace tile to open it.
 
 Click the Deploy icon.
 
-Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the C# script to access the API.
+Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the .env file to access the API.
 
 ![alt text][credentials]
 
 ...
 
-Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the C# script to access the API. This does not show your workspace ID.
+Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the .env file to access the API. This does not show your workspace ID.
 
 ![alt text][conversation-service-credentials]
 
@@ -85,13 +85,13 @@ Click the new workspace tile to open it.
 
 Click the Deploy icon.
 
-Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the C# script to access the API.
+Click Credentials (next to Deploy Options). Copy your workspace ID, username and password. Enter these as strings in the .env file to access the API.
 
 ![alt text][credentials]
 
 ...
 
-Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the C# script to access the API. This does not show your workspace ID.
+Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the .env file to access the API. This does not show your workspace ID.
 
 
 ### Add credentials

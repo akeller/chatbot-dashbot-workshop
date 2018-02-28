@@ -16,9 +16,11 @@ This is a two step process, one part in the browser and one part in the source c
 
 I did this for you, but checkout [app.js](./app.js).
 
-![alt text][updateMessage]
+![alt text][post]
 
 dashbot.logIncoming -> User typed messages
+
+![alt text][updateMessage]
 
 dashbot.logOutgoing -> Watson responses
 
@@ -26,3 +28,4 @@ Message text and UserId required (userID must the same to communicate in the sam
 
 
 [updateMessage]: ./readme_images/updateMessage_dashbot.png "alt text"
+[post]: ./readme_images/post_dashbot.png "alt text"

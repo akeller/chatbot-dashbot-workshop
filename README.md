@@ -100,6 +100,10 @@ Alternatively, from the IBM Cloud Conversation page (page where the Launch tool 
 
 ![alt text][env_file]
 
+### Dashbot!
+
+Click over to the [DASHBOT.md](/DASHBOT.md). Follow the steps in a browser.
+
 ### Installing and starting the app (via bash)
 
 1. Install the demo app package into the local Node.js runtime environment:
@@ -128,11 +132,11 @@ To see details of how these intents are defined, including sample input for each
 
 After you have the app deployed and running, you can explore the source files and make changes. Try the following:
 
-* Modify the .js files to change the app logic.
+* Modify the .js files to change the app logic. (add Dashbot lines here)
 * Modify the .html file to change the appearance of the app page.
 * Use the Conversation tool to train the service for new intents, or to modify the dialog flow. For more information, see the [Conversation service documentation][docs_landing].
 
-## Deploying to IBM Cloud
+## Deploying to IBM Cloud (not covered in this workshop)
 
 You can use Cloud Foundry to deploy your local version of the app to IBM Cloud.
 
@@ -168,6 +172,9 @@ You can use Cloud Foundry to deploy your local version of the app to IBM Cloud.
   ```
   Access your app on IBM Cloud at the URL specified in the command output.
 
+## Deploying to Slack (not covered in this workshop)
+
+Follow the documentation in the Deploy section of your workspace.
 
 ## License
 

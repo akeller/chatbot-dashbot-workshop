@@ -12,7 +12,7 @@
 
 ## Add code to feed bot
 
-I did this for you, but checkout app.js.
+I did this for you, but checkout [app.js](./app.js).
 
 ![alt text][updateMessage]
 

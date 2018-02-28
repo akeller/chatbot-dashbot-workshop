@@ -1,5 +1,7 @@
 # Steps to create a Dashbot account
 
+This is a two step process, one part in the browser and one part in the source code. Make sure to follow Dashbot instructions for your language/platform!
+
 ## Create your bot
 
 1. Visit https://www.dashbot.io/ and click "Sign Up".

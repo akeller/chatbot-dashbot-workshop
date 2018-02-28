@@ -13,7 +13,7 @@ This Node.js app demonstrates the Conversation service in a simple chat interfac
 
 If you want to modify the app or use it as a basis for building your own app, install it locally. You can then deploy your modified version of the app to the IBM Cloud.
 
-Clone this repo!
+*Clone this repo!*
 
 ### Setting up the Conversation service
 
@@ -60,6 +60,10 @@ Click Credentials (next to Deploy Options). Copy your workspace ID, username and
 Alternatively, from the IBM Cloud Conversation page (page where the Launch tool button sits), click "Service credentials" then expand "View credentials" to reveal your username and password. Enter these as strings in the C# script to access the API. This does not show your workspace ID.
 
 ![alt text][conversation-service-credentials]
+
+### DIY bot
+
+[Download Bot Design Instructions](https://github.com/akeller/chatbot-workshop-101/raw/master/WatsonConversationIntro.docx)
 
 ### Importing from Bot Asset Exchange (BAE) [optional]
 

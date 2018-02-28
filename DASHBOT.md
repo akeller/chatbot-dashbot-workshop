@@ -19,6 +19,7 @@ I did this for you, but checkout [app.js](./app.js).
 ![alt text][updateMessage]
 
 dashbot.logIncoming -> User typed messages
+
 dashbot.logOutgoing -> Watson responses
 
 Message text and UserId required (userID must the same to communicate in the same channel)
